@@ -1,3 +1,5 @@
-p{
-  color: blue;
+img.logo {
+	width: 200px;
+    height: 50px;
+	background: url(http://cdn.sstatic.net/Sites/stackoverflow/img/sprites.svg) no-repeat top left;
 }
