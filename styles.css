@@ -1,5 +1,41 @@
-img.logo {
-	width: 200px;
-    height: 50px;
-	background: url(http://cdn.sstatic.net/Sites/stackoverflow/img/sprites.svg) no-repeat top left;
+html { 
+  background: url(background.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+body{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 0;
+}
+
+div.container{
+  height:100%;
+  width:65vw;
+  background-color: lightgray;
+  display: flex;
+  flex-direction: column;
+}
+
+div.top-text{
+  margin: 100px 50px 0px;
+  font-size: large;
+  font-weight: bold;
+}
+
+.form-section{
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-body{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
