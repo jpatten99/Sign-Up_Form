@@ -1,12 +1,23 @@
 html { 
-  background: url(background.jpg) no-repeat center center fixed; 
+  background: url(images/background.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  --green-color: rgba(27, 117, 27, 0.712);
 }
+
+@font-face {
+  font-family: 'journalregular';
+  src: url('fonts/journal-webfont.woff2') format('woff2'),
+       url('fonts/journal-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
 body{
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
   display: flex;
   flex-direction: row-reverse;
@@ -14,7 +25,7 @@ body{
 }
 
 div.container{
-  height:100%;
+  min-height:100%;
   width:65vw;
   background-color: lightgray;
   display: flex;
@@ -22,7 +33,7 @@ div.container{
 }
 
 div.top-text{
-  margin: 100px 50px 0px;
+  margin: 100px 50px 50px;
   font-size: large;
   font-weight: bold;
 }
@@ -31,11 +42,102 @@ div.top-text{
   background-color: white;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: space-around;
+  height: fit-content;
+  box-shadow: 0px 10px 10px -7px #888888;
+  margin-bottom: 50px;
 }
 
 .form-body{
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
+  width:100%;
+  
+}
+
+h3{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+input{
+  margin-right: 150px;
+}
+
+.form-body-left, .form-body-right{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}  
+
+form{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
   flex-wrap: wrap;
+  width: 100%;
+}
+
+label{
+  width: fit-content;
+  font-style: italic;
+  color: darkslategrey;
+  font-weight: 750;
+}
+
+.form-inputs{
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+  margin-left: 50px;
+}
+
+button{
+  all: unset;
+  background-color: var(--green-color);
+  color: white;
+  padding: 10px 25px;
+  border-radius: 5px;
+  box-shadow: 0px 10px 10px -7px #888888;
+}
+
+#bottom{
+  margin-left: 25px;
+}
+
+a{
+  all: unset;
+  color: var(--green-color)
+}
+
+.logo-bar{
+  background-color: rgba(0,0,0,0.4);
+  height: 150px;
+  width: 35vw;
+  margin-top: 20vh;
+  display:flex;
+  justify-content: center;
+}
+
+.logo{
+  height: 150px;
+  width: 150px;
+}
+.logosvg{
+  height: 100%;
+  width: 100%;
+}
+.logo-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 15px;
+}
+
+#left-text{
+  height: fit-content;
+  color: white;
+  font-family: 'journalregular';
 }
